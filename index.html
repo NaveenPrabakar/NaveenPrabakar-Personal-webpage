@@ -6,16 +6,17 @@
     <title>Naveen Prabakar's Personal Webpage</title>
     <style>
         body {
-            font-family: 'Times New Roman', sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
-            color: #333;
+            background: url('giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0e0e0;
             line-height: 1.6;
         }
         header {
-            background: linear-gradient(45deg, #6a11cb, #2575fc);
-            color: #fff;
+            background: rgba(0, 0, 0, 0.7);
+            color: #e0e0e0;
             padding: 1rem 0;
             border-bottom: 3px solid #ff8c00;
         }
@@ -29,7 +30,7 @@
             margin-top: 10px;
         }
         nav a {
-            color: #fff;
+            color: #e0e0e0;
             text-decoration: none;
             margin: 0 15px;
             font-size: 1rem;
@@ -41,120 +42,54 @@
             width: 80%;
             margin: 2rem auto;
             overflow: hidden;
-        }
-        .bio, .projects, .work-experience {
-            background: #fff;
-            margin: 1rem 0;
+            background: rgba(28, 28, 28, 0.8);
             padding: 2rem;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-        .bio h2, .projects h2, .work-experience h2 {
-            margin-top: 0;
-            color: #333;
-            font-size: 1.5rem;
+        .bio {
+            text-align: center;
         }
-        .projects ul, .work-experience ul {
-            list-style: none;
-            padding: 0;
+        .bio img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
         }
-        .projects li, .work-experience li {
-            background: #e0ffff;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
+        .button-container {
+            text-align: center;
+            margin-top: 2rem;
         }
-        .projects li a {
-            color: #333;
+        .button-container a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            background: #6a11cb;
+            color: #fff;
             text-decoration: none;
-            font-weight: bold;
+            border-radius: 5px;
+            font-size: 1rem;
         }
-        .projects li a:hover {
-            text-decoration: underline;
-        }
-        .work-experience h3 {
-            margin: 0;
-        }
-        .work-experience p {
-            margin: 0.5rem 0;
+        .button-container a:hover {
+            background: #2575fc;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Naveen Prabakar</h1>
-        <nav>
-            <a href="#bio">Bio</a>
-            <a href="#projects">Projects</a>
-            <a href="#work-experience">Work Experience</a>
-        </nav>
     </header>
-
     <div class="container">
-        <section id="bio" class="bio">
-            <h2>Bio</h2>
+        <section class="bio">
+            <img src="image.png" alt="Naveen Prabakar">
             <p>I'm soon to be a junior at Iowa State University in Computer Science. My current goal is to secure experience revolving around backend development. Currently working on a new project to help showcase my skills in backend. My job experience as a computer science tutor has helped me stay refreshed on concepts.</p>
             <p>My skills are primarily in Java, Python, MySQL, Neo4j, and C#. I'm open to working intern positions for backend development, databases, or software. I want to be able to showcase the skills I’ve learned so far in real-life applications.</p>
         </section>
-
-
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/NaveenPrabakar/Com-s-321-computer-architecture-" target="_blank">Machine Code Translator</a>
-                    <p>
-                        - Translated machine code into 32-bit binary numbers for the program to use.<br>
-                        - Implemented bitwise operations and bit manipulation on the 32-bit numbers to translate the binary numbers to readable legv8 assembly instructions.<br>
-                        - Created Shell scripts for the program to run through.
-                    </p>
-                    <p><strong>Skills:</strong> Machine Code · Shell Scripting · Computer Science · Java · Computer Architecture · Assembly Language · Object-Oriented Programming (OOP)</p>
-                </li>
-                <li>
-                    <a href="https://github.com/NaveenPrabakar/CodingJournal" target="_blank">Coding Journal</a>
-                    <p>
-                        - Engineered a Python backend program that efficiently stored user data entries into a MySQL database, categorized by user input; improved data retrieval speed by 15%-20%<br>
-                        - Designed a sophisticated application that customized data outputs according to user preferences<br> 
-                        - Enabled user-driven modification of data entries through customized insert statements, enhancing user experience with greater accessibility and flexibility<br>
-                        - Implemented API's to create a automatic spell and grammar checker for user entries<br>
-                        - Created a shell script to run the program
-                    </p>
-                    <p><strong>Skills:</strong> Databases · Python (Programming Language) · Database Management System (DBMS) · MySQL · SQL · Query Optimization</p>
-                </li>
-                <li>
-                    <a href="https://github.com/NaveenPrabakar/Com-S-363-DBMS-" target="_blank">MYSQL and NEO4j Database Management</a>
-                    <p>
-                        - Created structured Entity-Relationship diagrams for organizational databases.<br>
-                        - Successfully imported CSV files into designated tables in both Neo4j and MySQL environments, ensuring data integrity and consistency of 95%.<br>
-                        - Developed and optimized query statements for enhanced efficiency and performance, contributing to quicker outputs.
-                    </p>
-                    <p><strong>Skills:</strong> Databases · Database Management System (DBMS) · MySQL · SQL · Neo4j · Query Optimization · CSV file</p>
-                </li>
-            </ul>
-        </section>
-
-        
-            
-
-
-        <section id="work-experience" class="work-experience">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>
-                    <h3>Computer Science Tutor</h3>
-                    <p><strong>Institution:</strong> Iowa State University - College of Liberal Arts and Sciences (Part-time)</p>
-                    <p><strong>Duration:</strong> Aug 2023 - Present (1 yr)</p>
-                    <p><strong>Location:</strong> Ames, Iowa (On-site)</p>
-                    <p><strong>Responsibilities:</strong></p>
-                    <ul>
-                        <li>Assisted over 100 students in core computer science concepts such as Data Structures, Object-Oriented Programming, and Discrete Mathematics</li>
-                        <li>Created examples for students to use and study for upcoming exams, resulting in higher exam grades</li>
-                        <li>Provided comprehensive help concerning various languages such as Python and Java, leading to better project scores</li>
-                        <li>Tutored 4 different courses: OOP, Python, Data Structures, and Discrete Mathematics</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+        <div class="button-container">
+            <a href="projects.html">Projects</a>
+            <a href="work-experience.html">Work Experience</a>
+            <a href="education.html">Education</a>
+            <a href="resume.pdf" target="_blank">Resume</a>
+        </div>
     </div>
 </body>
 </html>
